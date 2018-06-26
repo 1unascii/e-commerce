@@ -397,6 +397,58 @@
         ]
     },
     {
+        "name": "commerceguys/authnet",
+        "version": "v1.0.0-rc3",
+        "version_normalized": "1.0.0.0-RC3",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/commerceguys/authnet.git",
+            "reference": "aabb09cf0a908b5407aece4ebc80b983a746a7ef"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/commerceguys/authnet/zipball/aabb09cf0a908b5407aece4ebc80b983a746a7ef",
+            "reference": "aabb09cf0a908b5407aece4ebc80b983a746a7ef",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "ext-simplexml": "*",
+            "ext-xmlwriter": "*",
+            "guzzlehttp/guzzle": "~6.2",
+            "php": ">=5.5"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.8",
+            "squizlabs/php_codesniffer": "~2"
+        },
+        "time": "2018-05-02T15:02:36+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "CommerceGuys\\AuthNet\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Matt Glaman",
+                "email": "nmd.matt@gmail.com"
+            }
+        ],
+        "description": "PHP SDK for Authorize.Net API, using Guzzle.",
+        "keywords": [
+            "authorize.net",
+            "authorizenet",
+            "ecommerce",
+            "payment"
+        ]
+    },
+    {
         "name": "commerceguys/intl",
         "version": "v1.0.1",
         "version_normalized": "1.0.1.0",
@@ -1872,6 +1924,279 @@
         ],
         "description": "Drupal Commerce is a flexible eCommerce solution.",
         "homepage": "http://drupal.org/project/commerce",
+        "support": {
+            "source": "http://cgit.drupalcode.org/commerce"
+        }
+    },
+    {
+        "name": "drupal/commerce_authnet",
+        "version": "1.0.0-rc1",
+        "version_normalized": "1.0.0.0-RC1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/commerce_authnet",
+            "reference": "8.x-1.0-rc1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/commerce_authnet-8.x-1.0-rc1.zip",
+            "reference": "8.x-1.0-rc1",
+            "shasum": "e4f4fc44049c24a6e9a0dcdbaa13f2e8d092c158"
+        },
+        "require": {
+            "commerceguys/authnet": "^1.0.0-beta6",
+            "drupal/commerce": "~2.0",
+            "drupal/commerce_payment": "*",
+            "drupal/core": "~8.5",
+            "lcobucci/jwt": "~3.1"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-rc1",
+                "datestamp": "1526309580",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "RC releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "bojanz",
+                "homepage": "https://www.drupal.org/user/86106"
+            },
+            {
+                "name": "czigor",
+                "homepage": "https://www.drupal.org/user/826222"
+            },
+            {
+                "name": "mglaman",
+                "homepage": "https://www.drupal.org/user/2416470"
+            },
+            {
+                "name": "rszrama",
+                "homepage": "https://www.drupal.org/user/49344"
+            }
+        ],
+        "description": "Provides Commerce integration for Authorize.net.",
+        "homepage": "http://drupal.org/project/commerce_authnet",
+        "support": {
+            "source": "http://cgit.drupalcode.org/commerce_authnet"
+        }
+    },
+    {
+        "name": "drupal/commerce_order",
+        "version": "2.7.0",
+        "version_normalized": "2.7.0.0",
+        "require": {
+            "drupal/commerce": "self.version",
+            "drupal/commerce_price": "*",
+            "drupal/commerce_store": "*",
+            "drupal/core": "*",
+            "drupal/entity_reference_revisions": "*",
+            "drupal/profile": "*",
+            "drupal/state_machine": "*"
+        },
+        "type": "metapackage",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.7",
+                "datestamp": "1527530416",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "bojanz",
+                "homepage": "https://www.drupal.org/user/86106"
+            },
+            {
+                "name": "jsacksick",
+                "homepage": "https://www.drupal.org/user/972218"
+            },
+            {
+                "name": "mglaman",
+                "homepage": "https://www.drupal.org/user/2416470"
+            },
+            {
+                "name": "rszrama",
+                "homepage": "https://www.drupal.org/user/49344"
+            }
+        ],
+        "description": "Defines the Order entity and associated features.",
+        "homepage": "https://www.drupal.org/project/commerce",
+        "support": {
+            "source": "http://cgit.drupalcode.org/commerce"
+        }
+    },
+    {
+        "name": "drupal/commerce_payment",
+        "version": "2.7.0",
+        "version_normalized": "2.7.0.0",
+        "require": {
+            "drupal/commerce": "self.version",
+            "drupal/commerce_order": "*",
+            "drupal/core": "*",
+            "drupal/entity_reference_revisions": "*"
+        },
+        "type": "metapackage",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.7",
+                "datestamp": "1527530416",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "bojanz",
+                "homepage": "https://www.drupal.org/user/86106"
+            },
+            {
+                "name": "jsacksick",
+                "homepage": "https://www.drupal.org/user/972218"
+            },
+            {
+                "name": "mglaman",
+                "homepage": "https://www.drupal.org/user/2416470"
+            },
+            {
+                "name": "rszrama",
+                "homepage": "https://www.drupal.org/user/49344"
+            }
+        ],
+        "description": "Provides payment functionality.",
+        "homepage": "https://www.drupal.org/project/commerce",
+        "support": {
+            "source": "http://cgit.drupalcode.org/commerce"
+        }
+    },
+    {
+        "name": "drupal/commerce_price",
+        "version": "2.7.0",
+        "version_normalized": "2.7.0.0",
+        "require": {
+            "drupal/commerce": "self.version",
+            "drupal/core": "~8.0"
+        },
+        "type": "metapackage",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.7",
+                "datestamp": "1527530416",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "bojanz",
+                "homepage": "https://www.drupal.org/user/86106"
+            },
+            {
+                "name": "jsacksick",
+                "homepage": "https://www.drupal.org/user/972218"
+            },
+            {
+                "name": "mglaman",
+                "homepage": "https://www.drupal.org/user/2416470"
+            },
+            {
+                "name": "rszrama",
+                "homepage": "https://www.drupal.org/user/49344"
+            }
+        ],
+        "description": "Defines the Currency entity.",
+        "homepage": "https://www.drupal.org/project/commerce",
+        "support": {
+            "source": "http://cgit.drupalcode.org/commerce"
+        }
+    },
+    {
+        "name": "drupal/commerce_store",
+        "version": "2.7.0",
+        "version_normalized": "2.7.0.0",
+        "require": {
+            "drupal/commerce": "self.version",
+            "drupal/commerce_price": "*",
+            "drupal/core": "*"
+        },
+        "type": "metapackage",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.7",
+                "datestamp": "1527530416",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "bojanz",
+                "homepage": "https://www.drupal.org/user/86106"
+            },
+            {
+                "name": "jsacksick",
+                "homepage": "https://www.drupal.org/user/972218"
+            },
+            {
+                "name": "mglaman",
+                "homepage": "https://www.drupal.org/user/2416470"
+            },
+            {
+                "name": "rszrama",
+                "homepage": "https://www.drupal.org/user/49344"
+            }
+        ],
+        "description": "Defines the Store entity and associated features.",
+        "homepage": "https://www.drupal.org/project/commerce",
         "support": {
             "source": "http://cgit.drupalcode.org/commerce"
         }
@@ -3621,6 +3946,66 @@
             "javascript",
             "phantomjs",
             "testing"
+        ]
+    },
+    {
+        "name": "lcobucci/jwt",
+        "version": "3.2.2",
+        "version_normalized": "3.2.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/lcobucci/jwt.git",
+            "reference": "0b5930be73582369e10c4d4bb7a12bac927a203c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/lcobucci/jwt/zipball/0b5930be73582369e10c4d4bb7a12bac927a203c",
+            "reference": "0b5930be73582369e10c4d4bb7a12bac927a203c",
+            "shasum": ""
+        },
+        "require": {
+            "ext-openssl": "*",
+            "php": ">=5.5"
+        },
+        "require-dev": {
+            "mdanter/ecc": "~0.3.1",
+            "mikey179/vfsstream": "~1.5",
+            "phpmd/phpmd": "~2.2",
+            "phpunit/php-invoker": "~1.1",
+            "phpunit/phpunit": "~4.5",
+            "squizlabs/php_codesniffer": "~2.3"
+        },
+        "suggest": {
+            "mdanter/ecc": "Required to use Elliptic Curves based algorithms."
+        },
+        "time": "2017-09-01T08:23:26+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Lcobucci\\JWT\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Luís Otávio Cobucci Oblonczyk",
+                "email": "lcobucci@gmail.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "A simple library to work with JSON Web Token and JSON Web Signature",
+        "keywords": [
+            "JWS",
+            "jwt"
         ]
     },
     {

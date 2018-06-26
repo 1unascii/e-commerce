@@ -4,6 +4,7 @@
     "require": {
         "cweagans/composer-patches": "^1.6.0",
         "drupal/commerce": "^2.7",
+        "drupal/commerce_authnet": "^1.0@RC",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.5",
         "drupal/drush": "^6.0@RC",

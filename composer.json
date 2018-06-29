@@ -28,6 +28,7 @@
         "drupal/field_permissions": "^1.0@RC",
         "drupal/field_tools": "^1.0@alpha",
         "drupal/field_validation": "^1.0@alpha",
+        "drupal/google_analytics": "^2.2",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/interval": "^1.1",
         "drupal/libraries": "^3.0@alpha",
@@ -38,6 +39,7 @@
         "drupal/rules": "^3.0@alpha",
         "drupal/seo_checklist": "^4.1",
         "drupal/xmlsitemap": "^1.0@alpha",
+        "drupal/zen": "^7.0@alpha",
         "drush/drush": "~8.0|^9.0.0-beta8",
         "hussainweb/drupal-composer-helper": "^1.0"
     },
